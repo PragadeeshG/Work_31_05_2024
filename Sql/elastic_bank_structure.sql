@@ -1,0 +1,16 @@
+create table if not exists elastic_bank_structure(
+record_key Integer not null,
+elastic_cloud_formation_code Integer null,
+elastic_cloud_formation_code_position varchar(255) null,
+elastic_cloud_formation_code_length varchar(255) null,
+elastic_check_digits_position varchar(255) null,
+elastic_check_digits_length varchar(255) null,
+elastic_identifier_position varchar(255) null,
+elastic_identifier_length varchar(255) null,
+branch_identifier_position varchar(255) null,
+branch_identifier_length varchar(255) null,
+elastic_national_id_length varchar(255) null,
+cache_number_position varchar(255) null,
+cache_number_length varchar(255) null,
+elastic_total_length varchar(255) null,
+constraint elastic_bank_structure_pk primary key(record_key));
